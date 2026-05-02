@@ -47,7 +47,7 @@ F8 = 8 car cumul de : difficultés (5) + manque de temps = incertitude
 
 Les estimations initiales ont été volontairement prudentes, notamment pour le moteur de recherche (F8), qui a été considéré comme une tâche complexe en raison du cumul de plusieurs aspects techniques (requêtes, filtres, intégration) ainsi qu’une incertitude quant au temps restant disponible pour sa réalisation.  
 
-Après réalisation, cette tâche s’est révélée plus simple que prévu dans le cadre du projet, ce qui explique la révision de son estimation.
+Après réalisation, cette tâche s’est révélée plus simple que prévu dans le cadre du projet, ce Après réalisation, cette tâche s’est révélée moins complexe que prévu, mais reste une fonctionnalité nécessitant plusieurs étapes (requêtes, filtres, interface).
 
 ---
 
@@ -64,7 +64,7 @@ Après discussion en équipe, les estimations suivantes ont été retenues :
 | F5 | 5 |
 | F6 | 3 |
 | F7 | 3 |
-| F8 | 3 |
+| F8 | 5 |
 
 ---
 
@@ -82,9 +82,9 @@ Après discussion en équipe, les estimations suivantes ont été retenues :
 
 | Membre   | Responsabilités |
 |----------|-----------------|
-| Harold | F1 Bootstrap, F2 Ingestion brute, F8 Moteur de recherche |
-| Nassim | F3 Nettoyage & normalisation, F4 Mapping & qualité, F7 documentation avec Rodrigue |
-| Rodrigue | F5 Requêtes analytiques, F6 Dashboard Kibana, F7 documentation avec Nassim |
+| Harold | F1 Bootstrap, F2 Ingestion brute, F8 Moteur de recherche  |
+| Nassim | F3 Nettoyage & normalisation, F5 Requêtes analytiques (implémentation principale), F4 Mapping & qualité, F7 documentation avec Rodrigue, F8 Moteur de recherche  |
+| Rodrigue | F5 Requêtes analytiques (pour F6 et F8) , F6 Dashboard Kibana, F7 documentation avec Nassim, F8 Moteur de recherche  |
 
 ---
 
