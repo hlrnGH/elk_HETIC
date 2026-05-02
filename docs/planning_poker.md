@@ -82,9 +82,9 @@ Après discussion en équipe, les estimations suivantes ont été retenues :
 
 | Membre   | Responsabilités |
 |----------|-----------------|
-| Harold | F1 Bootstrap, F2 Ingestion brute, F8 Moteur de recherche |
-| Nassim | F3 Nettoyage & normalisation, F4 Mapping & qualité, F7 documentation avec Rodrigue |
-| Rodrigue | F5 Requêtes analytiques, F6 Dashboard Kibana, F7 documentation avec Nassim |
+| Harold | F1 Bootstrap, F2 Ingestion brute |
+| Nassim | F3 Nettoyage & normalisation, F5 Requêtes analytiques (implémentation principale), F4 Mapping & qualité, F7 documentation avec Rodrigue |
+| Rodrigue | F5 Requêtes analytiques (pour F6 et F8) , F6 Dashboard Kibana, F7 documentation avec Nassim, F8 Moteur de recherche  |
 
 ---
 
