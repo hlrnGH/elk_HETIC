@@ -1,47 +1,46 @@
-# Demo Script — Movies Data Platform
+# Demo Script — Movies ELK Platform
 
-## Lancement du projet
+## Prérequis
 
-Lancer la stack ELK :
-
-docker-compose up -d
-
-Vérifier que Elasticsearch fonctionne en allant sur :
-http://localhost:9200
+- Docker Desktop lancé
+- Stack démarrée via `./start.sh`
+- Fichier `search.html` ouvert dans le navigateur
 
 ---
 
-## Lancement du moteur de recherche
+## Étape 1 — Recherche full-text
 
-Lancer l’API :
+1. Ouvrir `search.html` dans le navigateur
+2. Taper **"Avengers"** dans la barre de recherche
+3. Observer les 24 résultats — The Avengers, Avengers: Age of Ultron, etc.
+4. Chaque carte affiche : titre, note, année, durée, langue, genres
 
-node search_api.js
+## Étape 2 — Filtre par genre
 
-Si tout fonctionne, le message suivant s’affiche :
-API running on http://localhost:3000
+1. Dans la sidebar, sélectionner **"Action"** dans le dropdown Genre
+2. Observer que les résultats se filtrent automatiquement
+3. Seuls les films Avengers classés en Action apparaissent
+
+## Étape 3 — Filtre par langue
+
+1. Réinitialiser le genre sur "Tous les genres"
+2. Sélectionner **"Anglais"** dans le dropdown Langue
+3. Observer le filtrage par langue originale
+
+## Étape 4 — Recherche vide avec filtre
+
+1. Vider la barre de recherche
+2. Sélectionner **"Science Fiction"** dans Genre
+3. Observer tous les films de Science Fiction du dataset
 
 ---
 
-## Utilisation
+## Ce que démontre la démo
 
-Dans un navigateur, faire une recherche :
-
-http://localhost:3000/search?q=batman
-
-Ou tout autre film de votre choix.
-
-On peut aussi ajouter un filtre de langue :
-
-http://localhost:3000/search?q=batman&lang=en
+- Recherche full-text connectée à Elasticsearch (`movies_clean`)
+- Fuzzy matching — tolère les fautes de frappe
+- Filtres exacts par genre et par langue
+- Résultats en temps réel sans rechargement de page
 
 
----
-
-## Résultat attendu
-
-Une liste de films est retournée au format JSON avec les informations principales :
-- titre
-- date de sortie
-- note
-
-Cela permet de tester rapidement le fonctionnement du moteur de recherche connecté à Elasticsearch.
+> Pour visualiser la démo : ouvrir `demo.gif` dans un navigateur (Safari, Chrome, Firefox).
